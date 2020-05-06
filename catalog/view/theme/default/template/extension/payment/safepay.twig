@@ -1,0 +1,11 @@
+{% if payment_safepay_mode == 'sandbox' %}
+<div class="alert alert-danger">
+	{{ text_sandbox_mode_enable }}
+</div>
+{% endif %}
+<div class="text-left"><img src="{{ safepay_logo }}" /> {{ text_information }}</div>
+<div class="buttons">
+  <div class="pull-right">
+  	<a href="{{ action }}" class="btn btn-primary">{{ button_confirm }}</a>
+  </div>
+</div>
