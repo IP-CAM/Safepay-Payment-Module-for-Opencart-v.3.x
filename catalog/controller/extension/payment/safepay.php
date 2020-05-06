@@ -82,7 +82,7 @@ class ControllerExtensionPaymentSafepay extends Controller {
 		$params = array(
 			"env" => $payment_safepay_mode,
 			"beacon" => $tracker,
-			"source" => 'magento',
+			"source" => 'opencart',
 			"order_id" => $order['order_id'],
 			"redirect_url" => $this->url->link('extension/payment/safepay/callback', '', true),
 			"cancel_url" => $this->url->link('checkout/cart', '', true)
