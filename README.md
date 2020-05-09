@@ -8,15 +8,17 @@ If you are a developer, you can join our Developer Community on [Spectrum](https
 
 ## Installation 
 
-1) Visit and login to your opencart administration panel
+1) Download the plugin files as `zip` and rename the downloaded file to `safepay.ocmod.zip`
 
-2) Goto Extensions -> Installer -> Upload the extension zip file
+2) Visit and login to your opencart administration panel
+
+3) Goto Extensions -> Installer -> Upload the extension zip file
 
 Then installation will start
 
-3) Once the progress finish, goto Extensions -> Modifiications -> Click Refresh button on the right top corner from the web page.
+4) Once the progress finish, goto Extensions -> Modifiications -> Click Refresh button on the right top corner from the web page.
 
-4) Then Go to Extension->Extension page.. Select Extension type Payment ..
+5) Then Go to Extension->Extension page.. Select Extension type Payment ..
 Then Find SafePay in the payment module lists and click on Install button..
 And then Edit the Safepay plugin and add the credentials..
 
