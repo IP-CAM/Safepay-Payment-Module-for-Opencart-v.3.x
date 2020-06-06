@@ -14,7 +14,15 @@ class ControllerExtensionPaymentSafepay extends Controller {
 		$data['order_info'] = $order_info;
 		$this->load->model('localisation/country');
 		$country_info = $this->model_localisation_country->getCountry($order_info['payment_country_id']);
-		$data['country'] = $country_info['iso_code_2'];
+		//Fixing Country code bug on opencart 
+		//https://forum.opencart.com/viewtopic.php?t=18537
+		$country = "";
+		if (isset($country_info['iso_code_2'])) {
+			$country = $country_info['iso_code_2'];
+		} else if (isset($country_info['payment_iso_code_2'])) {
+			$country = $country_info['payment_iso_code_2'];
+		}
+		$data['country'] = $country;
 		$this->load->model('localisation/zone');
 		$zone_info = $this->model_localisation_zone->getZone($order_info['payment_zone_id']);
 		$data['province'] = $zone_info['code'];
