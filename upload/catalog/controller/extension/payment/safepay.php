@@ -19,7 +19,7 @@ class ControllerExtensionPaymentSafepay extends Controller {
 		$country = "";
 		if (isset($country_info['iso_code_2'])) {
 			$country = $country_info['iso_code_2'];
-		} else if (isset($country_info['payment_iso_code_2'])) {
+		} elseif (isset($country_info['payment_iso_code_2'])) {
 			$country = $country_info['payment_iso_code_2'];
 		}
 		$data['country'] = $country;
