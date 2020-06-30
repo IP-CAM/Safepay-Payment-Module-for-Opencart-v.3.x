@@ -8,7 +8,11 @@ If you are a developer, you can join our Developer Community on [Spectrum](https
 
 ## Installation 
 
-1) Download the plugin files as `zip` and rename the downloaded file to `safepay.ocmod.zip`
+1) Download the plugin files as `zip`
+
+2) Unzip and extract the files.
+
+3) Find and `zip` the `upload` folder and rename is as `safepay.ocmod.zip`.
 
 2) Visit and login to your opencart administration panel
 
